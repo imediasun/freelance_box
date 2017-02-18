@@ -7,8 +7,8 @@
         <!--Brand logo & name-->
         <!--================================-->
         <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"> <i class="fa fa-cube brand-icon"></i>
-                <div class="brand-title"> <span class="brand-text">Jasmine</span> </div>
+            <a href="index.html" class="navbar-brand">
+                <img style="height:70px" src="/img/logo.png">
             </a>
         </div>
         <!--================================-->

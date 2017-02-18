@@ -8,7 +8,7 @@
         <div id="mainnav-menu-wrap">
             <div class="nano">
                 <div class="nano-content">
-                    <ul id="mainnav-menu_2" class="list-group">
+                    <ul id="mainnav-menu_main" class="list-group">
 
                         <!--Category name-->
                         <li class="list-header">Navigation</li>

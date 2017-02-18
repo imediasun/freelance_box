@@ -341,5 +341,6 @@ input {
 }
 .table_text_monthe{
 
-    position:relative;top:-5px;color: #9c9c9c;border-color: #b7b7b7;font: normal normal bold 1.2em/1.8 sans-serif;text-shadow: 0 1px #fff;
+    position:relative;top:-5px;color: #9c9c9c;
+    border-color: #b7b7b7;font: normal normal bold 1.2em/1.8 sans-serif;text-shadow: 0 1px #fff;
 }

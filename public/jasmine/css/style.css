@@ -376,7 +376,7 @@ display:block
 	position: absolute;
 	width: 100%;
 	z-index: 10;
-	background-color: #e7ebee;
+	background-color: #0c91f6;
 	left: 0;
 	top: 0
 }
@@ -392,7 +392,7 @@ display:block
 .navbar-content {
 	position: relative;
 	left: 0;
-	background-color: #fff;
+	background-color: #0c91f6;
 	padding: 0 8px;
 }
 
@@ -403,7 +403,7 @@ display:block
 	background-color: transparent;
 	color: #fff;
 	padding: 0;
-	height: 60px;
+	height: 100px;
 	position: relative;
 	font-size: 26px;
 	z-index: 2;
@@ -544,7 +544,7 @@ display:block
 	transform: translateY(9px)
 }
 #navbar {
-	box-shadow: 0 1px 8px 0 rgba(51, 51, 51, 0.1)
+	box-shadow: 0 1px 8px 0 rgba(58, 336, 13, 0.1)
 }
 .navbar-header {
 	float: left;
@@ -564,7 +564,8 @@ display:block
 	width: 100%
 }
 #navbar-container {
-	background-color: #fff
+	background-color: #88bde6;
+	height:60px;
 }
 .navbar-content {
 	margin-left: 220px;
@@ -632,7 +633,7 @@ display:block
 }
 #mainnav {
 	height: 100%;
-	background-color: #000000
+	background-color: #0c91f6
 }
 #mainnav>*:not(.popover) .nano-pane {
 	display: none !important
@@ -650,6 +651,7 @@ display:block
 #mainnav-menu-wrap {
 	height: 100%
 }
+
 #mainnav-shortcut {
 	overflow: hidden
 }
@@ -662,7 +664,7 @@ display:block
 	padding-top: 50px
 }
 */
-#mainnav-menu ul, .mainnav-widget ul, .menu-popover ul, .menu-popover .sub-menu ul {
+#mainnav-menu ul, #mainnav-menu_main ul, .mainnav-widget ul, .menu-popover ul, .menu-popover .sub-menu ul {
 	list-style: none;
 	padding-left: 0;
 }
@@ -696,75 +698,79 @@ display:block
 	-webkit-transition: all .3s;
 	transition: all .3s
 }
-#mainnav-menu a {
+#mainnav-menu a,#mainnav-menu_main a {
 	display: block;
 	font-weight: 700;
 	color: #fff;
 	padding: 12px 20px
 }
-#mainnav-menu>li {
+#mainnav-menu>li, #mainnav-menu_main>li {
 	-webkit-transition: background-color .5s linear .5s;
 	transition: background-color .5s linear .5s
 }
-#mainnav-menu>li>a:hover, #mainnav-menu>li>a:active {
+#mainnav-menu>li>a:hover, #mainnav-menu>li>a:active,#mainnav-menu_main>li>a:hover, #mainnav-menu_main>li>a:active {
 	color: #fff;
 	background-color: #2986b8;
 }
-#mainnav-menu>li>a.hover {
+#mainnav-menu>li>a.hover,#mainnav-menu_main>li>a.hover {
 	color: #fff;
 	background-color: #2986b8;
 }
-#mainnav-menu>.active-link>a, #mainnav-menu>.active-link>a:hover {
+#mainnav-menu>.active-link>a, #mainnav-menu>.active-link>a:hover,#mainnav-menu_main>.active-link>a, #mainnav-menu_main>.active-link>a:hover {
 	color: #fff;
 	padding-left: 20px;
 	font-weight: 600;
 	background-color: #2986b8;
 }
-#mainnav-menu>.active-sub>a, #mainnav-menu>.active-sub>a:hover {
+#mainnav-menu>.active-sub>a, #mainnav-menu>.active-sub>a:hover,#mainnav-menu_main>.active-sub>a, #mainnav-menu_main>.active-sub>a:hover {
 	color: #fff
 }
-#mainnav-menu>.active {
+#mainnav-menu>.active,#mainnav-menu_main>.active {
 	-webkit-transition: background-color .5s;
 	transition: background-color .5s;
 	background-color: #19212D;
     box-shadow: inset 4px 0 0 0 #2986b8;
 }
-#mainnav-menu>.active .active {
+#mainnav-menu>.active .active,#mainnav-menu_main>.active .active  {
 	background-color: #28333e
 }
-#mainnav-menu ul a, .menu-popover .sub-menu ul a {
+#mainnav-menu ul a,#mainnav-menu_main ul a, .menu-popover .sub-menu ul a {
 	padding: 10px 20px 12px 53px;
 	font-weight: 600
 }
-#mainnav-menu ul a:hover, .menu-popover .sub-menu ul a:hover {
+#mainnav-menu ul a:hover,#mainnav-menu_main ul a:hover, .menu-popover .sub-menu ul a:hover {
 	color: #fff;
 }
-#mainnav-menu ul .list-header {
+#mainnav-menu ul .list-header,#mainnav-menu_main ul .list-header {
 	padding: 10px 35px;
 }
-#mainnav-menu ul ul a {
+#mainnav-menu ul ul a,#mainnav-menu_main ul ul a {
 	padding: 10px 35px;
 }
-#mainnav-menu ul ul a:hover, .menu-popover .sub-menu ul ul a:hover {
+#mainnav-menu ul ul a:hover,#mainnav-menu_main ul ul a:hover, .menu-popover .sub-menu ul ul a:hover {
 	color: #fff;
 }
-#mainnav-menu ul .active-link a, .menu-popover .sub-menu ul .active-link a {
+#mainnav-menu ul .active-link a,#mainnav-menu_main ul .active-link a, .menu-popover .sub-menu ul .active-link a {
 	font-weight: 600;
 	color: #fff;
 	box-shadow: inset 4px 0 0 0 #2986b8;
 	-webkit-transition: background-color 0.2s, padding-left 0.3s, box-shadow 0.4s;
 	transition: background-color 0.2s, padding-left 0.3s, box-shadow 0.4s
 }
-#mainnav-menu i {
+#mainnav-menu i,#mainnav-menu_main i {
 	padding: 0 10px 0 0
 }
-#mainnav-menu .hide-lg {
+#mainnav-menu .hide-lg,#mainnav-menu_main .hide-lg {
 	display: none
 }
 #container.mainnav-sm #mainnav-menu>.active-link>a,
 #container.mainnav-sm #mainnav-menu>.active-sub>a,
 #container.mainnav-sm #mainnav-menu>.active-link a:hover,
-#container.mainnav-sm #mainnav-menu>.active-sub a:hover {
+#container.mainnav-sm #mainnav-menu>.active-sub a:hover,
+#container.mainnav-sm #mainnav-menu_main>.active-link>a,
+#container.mainnav-sm #mainnav-menu_main>.active-sub>a,
+#container.mainnav-sm #mainnav-menu_main>.active-link a:hover,
+#container.mainnav-sm #mainnav-menu_main>.active-sub a:hover{
 	background-color: #2986b8;
 	box-shadow: none
 }
@@ -921,7 +927,8 @@ display:block
 /*======================================*/
 
 @media (min-width:768px) {
-#mainnav-menu .list-header, #mainnav-menu .list-divider, #mainnav-menu .menu-title, #mainnav-menu .arrow, #mainnav-menu .menu-title>.label {
+#mainnav-menu .list-header, #mainnav-menu .list-divider, #mainnav-menu .menu-title, #mainnav-menu .arrow, #mainnav-menu .menu-title>.label,
+#mainnav-menu_main .list-header, #mainnav-menu_main .list-divider, #mainnav-menu_main .menu-title, #mainnav-menu_main .arrow, #mainnav-menu_main .menu-title>.label{
 	opacity: 1
 }
 
@@ -929,7 +936,12 @@ display:block
 .mainnav-full #mainnav-menu .list-divider,
 .mainnav-full #mainnav-menu .menu-title,
 .mainnav-full #mainnav-menu .arrow,
-.mainnav-full #mainnav-menu .menu-title>.label {
+.mainnav-full #mainnav-menu .menu-title>.label,
+.mainnav-full #mainnav-menu_main .list-header,
+.mainnav-full #mainnav-menu_main .list-divider,
+.mainnav-full #mainnav-menu_main .menu-title,
+.mainnav-full #mainnav-menu_main .arrow,
+.mainnav-full #mainnav-menu_main .menu-title>.label{
 	padding-top: 0;
 	padding-bottom: 0;
 	margin: 0;
@@ -953,30 +965,31 @@ display:block
 	background-color: #384857;
 	color: #fff
 }
-#container.mainnav-full #mainnav-menu a {
+#container.mainnav-full #mainnav-menu a,#container.mainnav-full #mainnav-menu_main a {
 	white-space: nowrap;
 	position: relative;
 	padding: 12px 0 12px 19px
 }
-#container.mainnav-full #mainnav-menu a:hover {
+#container.mainnav-full #mainnav-menu a:hover,#container.mainnav-full #mainnav-menu_main a:hover {
 	box-shadow: inset 4px 0 0 0 #2986b8
 }
-#container.mainnav-full #mainnav-menu a .badge {
+#container.mainnav-full #mainnav-menu a .badge,#container.mainnav-full #mainnav-menu_main a .badge {
 	margin-top: -1.5em
 }
-#container.mainnav-full #mainnav-menu a .badge {
+#container.mainnav-full #mainnav-menu a .badge,#container.mainnav-full #mainnav-menu_main a .badge {
 	position: absolute;
 	padding: 3px 7px;
 	right: 2px;
 	top: 25%
 }
-#container.mainnav-full #mainnav-menu a i {
+#container.mainnav-full #mainnav-menu a i,#container.mainnav-full #mainnav-menu_main a i {
 	display: inline
 }
-#container.mainnav-full #mainnav-menu .active-link>a, #container.mainnav-full #mainnav-menu .active-sub>a {
+#container.mainnav-full #mainnav-menu .active-link>a, #container.mainnav-full #mainnav-menu .active-sub>a,
+#container.mainnav-full #mainnav-menu_main .active-link>a, #container.mainnav-full #mainnav-menu_main .active-sub>a{
 	color: #fff
 }
-#container.mainnav-full #mainnav-menu .collapse {
+#container.mainnav-full #mainnav-menu .collapse,#container.mainnav-full #mainnav-menu_main .collapse {
 	display: none;
 	height: 0 !important
 }
@@ -1020,7 +1033,12 @@ display:block
 .mainnav-sm #mainnav-menu .list-divider,
 .mainnav-sm #mainnav-menu .menu-title,
 .mainnav-sm #mainnav-menu .arrow,
-.mainnav-sm #mainnav-menu .menu-title>.label {
+.mainnav-sm #mainnav-menu .menu-title>.label,
+.mainnav-sm #mainnav-menu_main .list-header,
+.mainnav-sm #mainnav-menu_main .list-divider,
+.mainnav-sm #mainnav-menu_main .menu-title,
+.mainnav-sm #mainnav-menu_main .arrow,
+.mainnav-sm #mainnav-menu_main .menu-title>.label{
 	padding-top: 0;
 	padding-bottom: 0;
 	margin: 0;
@@ -1041,30 +1059,32 @@ display:block
 	background-color: #384857;
 	color: #fff
 }
-#container.mainnav-sm #mainnav-menu a {
+#container.mainnav-sm #mainnav-menu a,#container.mainnav-sm #mainnav-menu_main a {
 	white-space: nowrap;
 	position: relative;
 	padding: 12px 0 12px 19px
 }
-#container.mainnav-sm #mainnav-menu a:hover {
+#container.mainnav-sm #mainnav-menu a:hover,#container.mainnav-sm #mainnav-menu_main a:hover {
 	box-shadow: inset 4px 0 0 0 #2986b8
 }
-#container.mainnav-sm #mainnav-menu a .badge {
+#container.mainnav-sm #mainnav-menu a .badge,#container.mainnav-sm #mainnav-menu_main a .badge {
 	margin-top: -1.5em
 }
-#container.mainnav-sm #mainnav-menu a .badge {
+#container.mainnav-sm #mainnav-menu a .badge,#container.mainnav-sm #mainnav-menu_main a .badge {
 	position: absolute;
 	padding: 3px 7px;
 	right: 2px;
 	top: 25%
 }
-#container.mainnav-sm #mainnav-menu a i {
+#container.mainnav-sm #mainnav-menu a i,#container.mainnav-sm #mainnav-menu_main a i {
 	display: inline
 }
-#container.mainnav-sm #mainnav-menu .active-link>a, #container.mainnav-sm #mainnav-menu .active-sub>a {
+#container.mainnav-sm #mainnav-menu .active-link>a, #container.mainnav-sm #mainnav-menu .active-sub>a,
+#container.mainnav-sm #mainnav-menu_main .active-link>a, #container.mainnav-sm #mainnav-menu_main .active-sub>a{
 	color: #fff
 }
-#container.mainnav-sm #mainnav-menu .collapse {
+#container.mainnav-sm #mainnav-menu .collapse,
+#container.mainnav-sm #mainnav-menu_main .collapse{
 	display: none;
 	height: 0 !important
 }
@@ -1111,7 +1131,7 @@ display:block
 #mainnav .menu-popover .nano>.nano-content {
 	position: absolute
 }
-#mainnav-menu ul ul a:hover, .menu-popover .sub-menu ul ul a:hover, .menu-popover .sub-menu ul ul a:hover {
+#mainnav-menu ul ul a:hover,#mainnav-menu_main ul ul a:hover, .menu-popover .sub-menu ul ul a:hover, .menu-popover .sub-menu ul ul a:hover {
 	background-color: rgba(0,0,0,0.0005)
 }
 .menu-popover {
@@ -1343,15 +1363,15 @@ display:block
 	-webkit-transition: all .7s;
 	transition: all .7s
 }
-#mainnav-menu a {
+#mainnav-menu a,#mainnav-menu_main a {
 	-webkit-transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
 	transition: background-color 0.5s, color 0.5s, box-shadow 0.5s
 }
-#mainnav-menu ul a, .menu-popover .sub-menu ul a {
+#mainnav-menu ul a,#mainnav-menu_main ul a, .menu-popover .sub-menu ul a {
 	-webkit-transition: background-color 0.2s, padding-left 0.3s, box-shadow 0.4s;
 	transition: background-color 0.2s, padding-left 0.3s, box-shadow 0.4s
 }
-#mainnav-menu ul a:hover, .menu-popover .sub-menu ul a:hover {
+#mainnav-menu ul a:hover,#mainnav-menu_main ul a:hover, .menu-popover .sub-menu ul a:hover {
 	-webkit-transition: background-color 0.2s, padding-left 0.3s, box-shadow 0.4s;
 	transition: background-color 0.2s, padding-left 0.3s, box-shadow 0.4s
 }
@@ -1379,7 +1399,8 @@ display:block
 	-webkit-transition: font-size .7s;
 	transition: font-size .7s
 }
-#mainnav-menu .list-header, #mainnav-menu .list-divider, #mainnav-menu .menu-title, #mainnav-menu .arrow, #mainnav-menu .menu-title>.label {
+#mainnav-menu .list-header, #mainnav-menu .list-divider, #mainnav-menu .menu-title, #mainnav-menu .arrow, #mainnav-menu .menu-title>.label,
+#mainnav-menu_main .list-header, #mainnav-menu_main .list-divider, #mainnav-menu_main .menu-title, #mainnav-menu_main .arrow, #mainnav-menu_main .menu-title>.label{
 	opacity: 1;
 	-webkit-transition: all 1.5s ease 0.3s, color 0.3s;
 	transition: all 1.5s ease 0.3s, color 0.3s;
@@ -1389,7 +1410,12 @@ display:block
 .mainnav-sm #mainnav-menu .list-divider,
 .mainnav-sm #mainnav-menu .menu-title,
 .mainnav-sm #mainnav-menu .arrow,
-.mainnav-sm #mainnav-menu .menu-title>.label {
+.mainnav-sm #mainnav-menu .menu-title>.label,
+.mainnav-sm #mainnav-menu_main .list-header,
+.mainnav-sm #mainnav-menu_main .list-divider,
+.mainnav-sm #mainnav-menu_main .menu-title,
+.mainnav-sm #mainnav-menu_main .arrow,
+.mainnav-sm #mainnav-menu_main .menu-title>.label{
 	-webkit-transition: opacity 0.5s, padding 0.5s linear 0.5s, color 0.1s, margin 0.5s linear 0.5s;
 	transition: opacity 0.5s, padding 0.5s linear 0.5s, color 0.1s, margin 0.5s linear 0.5s;
 	transition-timing-function: cubic-bezier(.28, 1.02, .36, 1.145)

@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Lead extends Authenticatable
 {
     use Notifiable;
 
@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'id_customer'
     ];
 
     /**
@@ -24,12 +24,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+
     ];
 
-    //https://github.com/boxfrommars/ach    <--belongsToMany-->
-    public function leads()
+
+    // User >-< Achievement many to many relationship
+    public function users()
     {
-        return $this->belongsToMany('Lead', 'user_leads', 'id_user', 'id_lead')->withPivot('is_approved');
+        return $this->belongsToMany('User', 'user_leads', 'id_customer', 'id_user');
     }
 }

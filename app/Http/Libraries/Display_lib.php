@@ -17,4 +17,14 @@ class Display_lib
         $view.=view('footer_view',$data)->render();
         return $view;
     }
+    public static function admin($data)
+    {
+        $view=view('preheader_view',$data)->render();
+        $view.=view('header_view')->render();
+        $view.=view('main_page.main_navigation_view',$data)->render();
+        $view.=view('main_page.main_content_view',$data)->render();
+        $view.=view('main_page.main_aside_view',$data)->render();
+        $view.=view('footer_view',$data)->render();
+        return $view;
+    }
 }
